@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+}
+
+.stopwatch{
+    width: 100%;
+    height: 80%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1{
+    font-size: 130px;
+    color: white;
+    text-shadow: 2px 2px rgb(96, 112, 103);
+}
+
+h1:hover{
+    text-shadow: 3px 3px pink, -3px -3px pink   ;
+}
+
+h2{
+    font-size: 60px;
+    color: white;
+}
+
+::selection{
+    color:seagreen;
+    background-color: white;
+}
+
+.butGroup{
+    width: 100%;
+    height: 20%;
+    margin-top: -50px;
+    text-align: center;    
+}
+
+.but-content{
+    
+    display: flex;
+    margin-left: 30%;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#but1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #5d6072;
+}
+
+#but2{
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: royalblue;
+    border: 0;
+}
+
+#but3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid #5d6072;
+}
+
+@media( max-width: 700px){
+    .container{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 80px;
+    }
+
+    .but-content{
+        width: 50%;
+        margin: 0 25%;
+    }
+}
+
+@media( max-width: 450px){
+    .but-content{
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
